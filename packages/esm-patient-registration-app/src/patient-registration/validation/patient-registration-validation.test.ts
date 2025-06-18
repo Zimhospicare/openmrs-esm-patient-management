@@ -56,7 +56,7 @@ describe('Patient registration validation', () => {
   };
 
   const validateFormValues = async (formValues) => {
-    const config = (await getConfig('@openmrs/esm-patient-registration-app')) as unknown as RegistrationConfig;
+    const config = (await getConfig('@zimhospicare/esm-patient-registration-app')) as unknown as RegistrationConfig;
     const mockT = (key: string, defaultValue: string) => defaultValue;
 
     const validationSchema = getValidationSchema(config, mockT);
