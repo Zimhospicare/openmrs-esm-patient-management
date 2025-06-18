@@ -5,7 +5,7 @@ import { dashboardMeta } from './dashboard.meta';
 
 export const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
 
-const moduleName = '@openmrs/esm-service-queues-app';
+const moduleName = '@zimhospicare/esm-service-queues-app';
 
 const options = {
   featureName: 'outpatient',
