@@ -63,7 +63,7 @@ jobs:
   pre_release:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name == 'push' && github.repository_owner == 'openmrs' }}
+    if: ${{ github.event_name == 'push' && github.repository_owner == 'Zimhospicare' }}
 
     steps:
       - uses: actions/checkout@v4
@@ -117,7 +117,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name == 'release' && github.repository_owner == 'openmrs' }}
+    if: ${{ github.event_name == 'release' && github.repository_owner == 'Zimhospicare' }}
 
     steps:
       - uses: actions/checkout@v4
