@@ -23,6 +23,10 @@ export interface FieldDefinition {
   locationTag?: string;
   answerConceptSetUuid?: string;
   customConceptAnswers?: Array<CustomConceptAnswer>;
+  showWhenExpression?: {
+    field: string;
+    value: string;
+  };
 }
 
 export interface CustomConceptAnswer {
